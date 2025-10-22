@@ -61,7 +61,7 @@ openpyxl>=3.1.2
 ### 2. 저장소 클론
 
 ```bash
-git clone https://github.com/your-username/inca-automation.git
+git clone https://github.com/SyneticsCorp/inca_automation.git
 cd inca-automation
 ```
 
@@ -70,7 +70,7 @@ cd inca-automation
 ### 기본 사용법
 
 ```bash
-python inca_refactored.py \
+python inca_automation.py \
     --calib sample_input.xlsx \
     --measure "Input_1,Input_2,Output" \
     --duration 10 \
@@ -94,7 +94,7 @@ python inca_refactored.py \
 
 #### 예시 1: 기본 측정
 ```bash
-python inca_refactored.py \
+python inca_automation.py \
     -c sample_input.xlsx \
     -m "Input_1,Input_2,Output" \
     -d 10 \
@@ -104,7 +104,7 @@ python inca_refactored.py \
 
 #### 예시 2: 빠른 샘플링
 ```bash
-python inca_refactored.py \
+python inca_automation.py \
     -c sample_input.xlsx \
     -m "Input_1,Output" \
     -d 5 \
@@ -114,7 +114,7 @@ python inca_refactored.py \
 
 #### 예시 3: 여러 변수 측정
 ```bash
-python inca_refactored.py \
+python inca_automation.py \
     -c sample_input.xlsx \
     -m "Input_1,Input_2,Output,B_RED,B_GREEN,B_YELLOW" \
     -d 60 \
@@ -186,7 +186,7 @@ wb.save('sample_input.xlsx')
 ```
 inca-automation/
 │
-├── inca_refactored.py          # 메인 스크립트 (리팩토링 버전)
+├── inca_automation.py          # 메인 스크립트 
 ├── sample_input.xlsx            # 샘플 입력 파일
 ├── output.csv                   # 샘플 출력 파일
 ├── requirements.txt             # Python 의존성
@@ -202,7 +202,7 @@ inca-automation/
 ### 코드 구조
 
 ```
-inca_refactored.py
+inca_automation.py
 │
 ├── 유틸리티 함수
 │   ├── print_section_header()       # 섹션 헤더 출력
